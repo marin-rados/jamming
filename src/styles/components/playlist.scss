@@ -1,0 +1,52 @@
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  width: 35rem;
+  max-height: 60rem;
+  padding: 2.5rem 1.25rem;
+  background-color: var(--color-bg-darkerBlue);
+  box-shadow: 0 4px 2px 2px #000000;
+  &__input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: var(--color-white);
+  }
+  &__btn {
+    cursor: pointer;
+    width: 15rem;
+    padding: 2rem 0;
+    border-radius: 3rem;
+    border-width: 0;
+    margin-top: 1.5rem;
+    background-color: var(--color-purple);
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+    color: var(--color-white);
+    font-weight: 500;
+    &:hover {
+      background-color: var(--color-bg-purple);
+    }
+  }
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--color-bg-lightGray);
+  margin: 1rem 0;
+  &:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .playlist {
+    width: 90%;
+  }
+}

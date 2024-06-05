@@ -1,0 +1,28 @@
+:root {
+  --color-bg-darkBlue: #010c3f;
+  --color-bg-darkerBlue: rgba(1, 12, 63, 0.7);
+  --color-bg-purple: rgba(108, 65, 233, 0.7);
+  --color-bg-gray: rgba(256, 256, 256, 0.4);
+  --color-bg-transparent: rgba(0, 0, 0, 0);
+  --color-bg-lightGray: rgba(256, 256, 256, 0.8);
+  --color-purple: #6c41ec;
+  --color-white: #fff;
+  --border-rounder: 3rem;
+  --border-round: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+//imports
+@import "./components/app.scss";
+@import "./components/playlist.scss";
+@import "./components/search-results.scss";
+@import "./components/searchbar.scss";
+@import "./components/track.scss";
+@import "./components/tracklist.scss";
